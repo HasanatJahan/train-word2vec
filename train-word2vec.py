@@ -41,8 +41,8 @@ logging.info ("Done reading data file")
 # build vocabulary and train model
 model = gensim.models.Word2Vec(
     documents,
-    vector_size=150,
-    window=5,
+    vector_size=50,
+    window=2,
     min_count=2,
     workers=10,
     epochs=10)
